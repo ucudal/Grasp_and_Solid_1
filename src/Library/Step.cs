@@ -28,7 +28,7 @@ namespace Full_GRASP_And_SOLID.Library
         /*Yo creo que acá se usan tanto el patrón Expert como el principio SRP 
         porque la clase Step es la que se encarga de saber el costo y entonces 
         el código es más fácil de modificar. */
-        public double CostoStep(){ //Todos en "double" porque ya estoy usando double. 
+        public double StepCost(){ //Todos en "double" porque ya estoy usando double. 
 
             double costoProducto = 0;
 
