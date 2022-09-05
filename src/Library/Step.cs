@@ -24,27 +24,5 @@ namespace Full_GRASP_And_SOLID.Library
 
         public Equipment Equipment { get; set; }
 
-
-        /*Yo creo que acá se usan tanto el patrón Expert como el principio SRP 
-        porque la clase Step es la que se encarga de saber el costo y entonces 
-        el código es más fácil de modificar. */
-        public double StepCost(){ //Todos en "double" porque ya estoy usando double. 
-
-            double costoProducto = 0;
-
-            double costoEquipamiento = 0;
-
-            double costoTotal = 0; 
-            //
-
-            costoProducto = Input.UnitCost * Quantity;
-
-            costoEquipamiento = Equipment.HourlyCost * Time;
-
-            costoTotal = costoProducto * costoEquipamiento;
-
-            return costoTotal;
-
-        }
     }
 }
