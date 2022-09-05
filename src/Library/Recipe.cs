@@ -32,10 +32,9 @@ namespace Full_GRASP_And_SOLID.Library
 
             foreach (Step step in this.steps){ // .
 
-                costoTotal += step.StepCost();
+                costoTotal = step.Input.UnitCost * step.Quantity / 1000 + (step.Time/3600*(step.Equipment.HourlyCost));
             }
             return costoTotal;
-            // Por cada step, se suma al costo total.
 
 
         }
